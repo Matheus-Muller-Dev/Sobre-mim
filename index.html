@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en, pt-br">
+<html lang="pt-br">
 <head>
     
     <meta charset="UTF-8">
@@ -10,57 +10,66 @@
 
 </head>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-  
-  }
-  body {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('./imgs/pexels-francesco-ungaro-281260.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-  
-  }
-  </style>
-
 <body>
 
-  <img src="./imgs/Meu projeto.png" alt="img-eu">
-        <h1>Matheus Müller</h1>
-        <h2>CURSOS:<br>
-            Instituição: Senai<br>
-            Cuso: Competência Transversal – Tecnologia da informação e
-            comunicação<br><br>
-            
-            Instituição: GRACOM<br>
-            Curso: Adobe Illustrator e Photoshop<br><br>
-           
-            Instituição: SEBRAE<br>
-            Curso: Crescendo e Empreendendo<br><br>
-            
-            Instituição: Senai<br>
-            Curso: Adminstração financeira<br></h1>
-            
-
-
+  <div class="fhoto">
+    <img src="./imgs/Meu projeto.png" alt="img-eu">
+  </div>
+   <div class="container">
+    <a href="links/curriculo.html">
+      <div class="card">
+        <img src="imgs/curriculo.png" alt="curriculo" height="90">
+      </div>
+    </a> 
+  </div>
+ 
+       
+	
+   
 
 
 
 <style>
-  
-h1{text-align: center;
-    font-size: 60px;
+   @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
 
-}
+   *{
+            margin: 0%;
+            padding: 0%;
+            font-family: "Roboto", sans-serif;
+        }
 
-img{
+  img{
     display: block;
     margin: 0px auto;
 }
+  body{
+  font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg,rgba(13, 225, 240, 0.555), blue);
+    
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+  .card{
+    background-color: #ffffff80;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 1px 0px #00000075;
+            
+
+  }
+ 
+  a:hover .card {
+        background-color:#00000075;
+        transition: all .3s ease-out;
+      }
+
+
+
 
  </style>
 
