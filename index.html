@@ -66,9 +66,14 @@
   body{
   font-family: Arial, Helvetica, sans-serif;
     background-image: url(imgs/filosofo.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
 
+  }
+  .fhoto{
+    text-align: center;
   }
 
   .container{
@@ -76,7 +81,15 @@
     justify-content: center;
     width: 100%;
     margin-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
   }
+  .container div{
+    flex: 1 1 300px;
+    margin: 45px;
+}
   
   .card{
     background-color: #ffffff80;
@@ -85,13 +98,7 @@
             box-shadow: 3px 3px 1px 0px #00000075;
             cursor: pointer;
             margin-right: 100px;
-            
-            width: 150px;
-            
-            
-
-            
-        
+            width: 150px;  
   }
  
   a:hover .card {
